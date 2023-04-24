@@ -8,7 +8,10 @@ class Line {
 	//Ax+By+C=0
 public:
 	Line(const Point& p1, const Point& p2);
-	bool belongsPoint(const Point& p);
-private:
+	virtual bool belongsPoint(const Point& p);
+	virtual Point intersectPoint(const Line& line);
+protected:
 	double A, B, C = NULL;
 };
+
+
