@@ -15,7 +15,7 @@ bool Segment::belongsPoint(const Point& p)
 	return false;
 }
 
-Point Segment::intersectPoint(const Line& segment)
+Point Segment::intersectPoint(const Segment& segment)
 {
 	auto point = Line::intersectPoint(segment);
 	if (belongsPoint(point)) {

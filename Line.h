@@ -9,7 +9,7 @@ class Line {
 public:
 	Line(const Point& p1, const Point& p2);
 	virtual bool belongsPoint(const Point& p);
-	virtual Point intersectPoint(const Line& line);
+	Point intersectPoint(const Line& line);
 protected:
 	double A, B, C = NULL;
 };
