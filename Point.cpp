@@ -7,4 +7,4 @@ void Point::print() {
 	std::cout << "Point coordinates: "<<" x:" << x << " y:" << y << std::endl;
 }
 
-bool Point::isValid() { return this->x != NAN && this->y != NAN; };
+bool Point::isValid() { return !((isnan(x)) && (isnan(y))); };
